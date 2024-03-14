@@ -84,7 +84,7 @@ color: blueviolet;
    height: 100px;
    margin: 0 auto;
 }
-.list > a {
+.item > a {
    display: block;
    text-decoration: underline;
 }
