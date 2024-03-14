@@ -1,5 +1,9 @@
 /*style reset*/
 @import url("reset.css");
+/*--for smooth scroll--*/
+html {
+   scroll-behavior: smooth;
+ }
 /*main styles*/
 h1, h2, h3{
    color: bisque;
@@ -71,4 +75,16 @@ color: blueviolet;
 
 .loremipsum + p {
    color: green;
+}
+
+/*---- оформлення меню ----*/
+.menu {
+   display: block;
+   width: 100%;
+   height: 100px;
+   margin: 0 auto;
+}
+.list > a {
+   display: block;
+   text-decoration: underline;
 }
