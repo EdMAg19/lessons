@@ -1,0 +1,74 @@
+/*style reset*/
+@import url("reset.css");
+/*main styles*/
+h1, h2, h3{
+   color: bisque;
+}
+p {
+   color: aqua;
+}
+a {
+   color: tomato;
+}
+p.header__paragraf.paragraf {
+   color: blueviolet;
+}
+
+/*-------------------------------*/
+/*не буде працювати до поки працює властивість стилю 
+p.header__paragraf.paragraf {
+   color: blueviolet;
+}
+*/
+.info-block + p {
+   color: sienna;   
+}
+/*---------------------*/
+
+[class*="tem"] {
+   color: blue;
+}
+.info__paragraf.paragraf {
+   color: aquamarine;
+}
+
+.culture__title, .kitchen__title, .history__title {
+   color: rgb(128, 144, 11);
+}
+.culture-img {
+}
+.culture__article * {
+   color: rgb(129, 0, 41);
+}
+
+.history__article p {
+   color: goldenrod;
+}
+
+.kitchen__article .kitchen__paragraf {
+   color: rgb(0, 204, 163);
+}
+.kitchen__article {
+   color: cornflowerblue;
+}
+.kitchen__paragraf {
+}
+
+/*ID ідентифікатор з кінця блоку про подорожі перед блоком про подорожі*/
+#travel__video {
+   color: chartreuse;
+}
+
+li.item2 {
+   color: cadetblue;
+}
+.lorem ~ p {
+color: blueviolet;
+}
+.loremipsum > p {
+   color: rgb(141, 6, 6);
+}
+
+.loremipsum + p {
+   color: green;
+}
