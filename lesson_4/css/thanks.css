@@ -12,6 +12,13 @@
 /*style reset*/
 @import url("reset.css");
 
+body {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding-top: 20px;
+   box-sizing: border-box;
+}
+
 .main__thanks {
    font-family: "Libre Baskerville", serif;
    max-width: 1200px;
