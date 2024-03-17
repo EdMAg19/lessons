@@ -51,6 +51,10 @@ body {
    font-size: 30px;
 }
 
+.menu {}
+
+.menu__list {}
+
 .menu__list.list {
    padding-left: 30px;
    font-size: 20px;
@@ -60,9 +64,14 @@ body {
    margin-top: 10px;
 }
 
+.menu__item {}
+
 .menu__item.item {
    list-style: circle;
 }
+
+.item {}
+
 /*----------стаття для домашки------------*/
 .main__article {
    width: 100%;
@@ -260,6 +269,7 @@ h6>span {
    font-family: "LibreBaskerville", serif;
    max-width: 1200px;
    height: auto;
+   padding: 0 10px;
 }
 
 .thanks__title {
@@ -289,6 +299,7 @@ h6>span {
    display: block;
    margin: 0 auto;
    margin-bottom: 15px;
+   max-width: 100%;
 }
 
 .return__link>p {
