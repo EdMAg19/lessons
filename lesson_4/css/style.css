@@ -112,9 +112,12 @@ p>span{
    text-transform: uppercase;
 }
 
+h6 {
+   text-align: right;
+}
+
 h6>span {
    font-style: italic;
-   text-align: right;
 }
 
 .sw-img {
