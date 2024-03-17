@@ -119,6 +119,7 @@ h6>span {
    max-height: 450px;
    margin: 0 auto;
    display: block;
+   margin-bottom: 30px;
 }
 
 .article__more-info {
