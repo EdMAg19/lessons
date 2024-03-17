@@ -45,14 +45,14 @@ body {
 
 .header__menu.menu>p{
    margin-top: 50px;
-   padding-left: 50px;
+   padding-left: 30px;
    font-family: "Roboto", serif;
    font-weight: 700;
    font-size: 30px;
 }
 
 .menu__list.list {
-   padding-left: 50px;
+   padding-left: 30px;
    font-size: 20px;
    text-align: left;
    line-height: 140%;
