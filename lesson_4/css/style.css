@@ -48,7 +48,7 @@ body {
 .img-logo {
    display: block;
    margin: 0 auto 30px;
-   background-color: #b5b5b564;
+   background-color: rgba(181, 181, 181, 0.392);
 }
 
 .header__text>p {
