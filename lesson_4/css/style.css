@@ -43,6 +43,7 @@ body {
    line-height: 120%;
    /* 48px/40 */
    margin-bottom: 30px;
+   text-shadow: 5px 5px 10px  rgba(255, 238, 0, 0.83), 5px -5px 10px rgba(0, 119, 255, 0.817);
 }
 
 .img-logo {
