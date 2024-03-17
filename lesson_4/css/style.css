@@ -50,10 +50,6 @@ body {
    font-size: 30px;
 }
 
-.menu {}
-
-.menu__list {}
-
 .menu__list.list {
    padding-left: 50px;
    font-size: 20px;
@@ -63,14 +59,9 @@ body {
    margin-top: 10px;
 }
 
-.menu__item {}
-
 .menu__item.item {
    list-style: circle;
 }
-
-.item {}
-
 /*----------стаття для домашки------------*/
 .main__article {
    width: 100%;
