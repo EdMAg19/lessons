@@ -1,0 +1,273 @@
+/*------------fonts-------------*/
+
+/*-----локальні шрифти----*/
+@import url("fonts.css");
+
+/*------шрифти підключені з Google Fonts------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+/*------шрифти підключені через плагін Google Fonts-----*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:700&display=swap");
+
+/*style reset*/
+@import url("reset.css");
+
+/*--for smooth scroll--*/
+html {
+   scroll-behavior: smooth;
+}
+
+/*main styles*/
+body {
+   width: 100%;
+}
+
+.main {
+   background-color: #d6d6d623;
+}
+
+.main__content {
+   max-width: 1300px;
+   margin: 0 auto;
+}
+
+.content.krovato {
+   width: 100%;
+   margin: 0 auto;
+   background-color: #fff;
+   margin-bottom: 40px;
+}
+
+.krovato {}
+
+.krovato__shop {
+   max-width: 1100px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+.title {
+   text-align: center;
+   color: #2b2929;
+   font-size: 40px;
+   font-family: "Proxima Nova", sans-serif;
+   font-weight: 400;
+   line-height: 120%;
+   /* 48px/40 */
+   padding-top: 40px;
+}
+
+.krovato-img {
+   max-width: 100%;
+   padding-top: 40px;
+}
+
+.krovato-img+.paragraf {
+   padding-top: 40px;
+}
+
+.krovato__shop>.paragraf {
+   color: #2b2929;
+   font-size: 16px;
+   font-family: "Proxima Nova", sans-serif;
+   font-weight: 400;
+   line-height: 187.5%;
+   /* 30px/16 */
+   padding-top: 20px;
+}
+
+.krovato__shop>.subtitle {
+   color: #2b2929;
+   font-size: 20px;
+   font-family: "Proxima Nova", sans-serif;
+   font-weight: 400;
+   line-height: 140%;
+   /* 28px/20 */
+   padding-top: 40px;
+}
+
+.krovato__shop>.subtitle {
+   text-align: justify;
+}
+
+.list {
+   padding-top: 10px;
+}
+
+.item {
+   color: #2b2929;
+   font-size: 16px;
+   font-family: "Proxima Nova", sans-serif;
+   font-weight: 400;
+   line-height: 187.5%;
+   /* 30px/16 */
+   padding-top: 20px;
+   padding-left: 40px;
+   background: url(../img/icons/mark.svg) no-repeat 0 25px;
+}
+
+.list+.paragraf {
+   padding-top: 40px;
+}
+
+.krovato__cards {
+   max-width: 1300px;
+   background-color: #fff;
+   font-size: 0;
+   margin-bottom: 70px;
+}
+
+.subtitle {
+   text-align: center;
+   color: #2b2929;
+   font-size: 40px;
+   font-family: "Proxima Nova", sans-serif;
+   font-weight: 400;
+   line-height: 120%;
+   /* 48px/40 */
+}
+
+.cards {
+   margin-top: 40px;
+   display: inline-block;
+   width: 25%;
+   vertical-align: top;
+}
+
+.mark-img {
+   display: block;
+   margin: 0 auto;
+   max-width: 170px;
+}
+
+.card-title {
+   color: #2b2929;
+   font-size: 26px;
+   text-align: center;
+   font-family: "Proxima Nova", sans-serif;
+   font-weight: 400;
+   line-height: 130.7%;
+   /* 34px/26 */
+   padding-top: 20px;
+}
+
+.cards>.paragraf {
+   color: #2b2929;
+   font-size: 16px;
+   text-align: center;
+   font-family: "Proxima Nova", sans-serif;
+   font-weight: 400;
+   line-height: 187.5%;
+   /* 30px/16 */
+   padding-top: 20px;
+}
+
+/*----------------commerce shop------------------*/
+.comerce {
+   max-width: 1320px;
+   min-height: 320px;
+   font-size: 0;
+   margin-bottom: 40px;
+}
+
+.commerce__title {
+   font-family: "Roboto", sans-serif;
+   font-weight: 500;
+   font-size: 50px;
+   text-transform: capitalize;
+   text-align: center;
+   line-height: 120%;
+   /* 60px/50 */
+   color: #000000;
+   text-shadow: 0px 4px 4px rgba(66, 68, 90, 0.25);
+}
+
+.commerce__cards {
+   width: 100%;
+   font-size: 0;
+   margin-top: 60px;
+   overflow-x: hidden;
+}
+
+.cards-img {
+   display: inline-block;
+   max-width: 16.6%;
+   padding-right: 0;
+   padding-left: 12px;
+   padding-right: 12px;
+}
+
+.learning {
+   min-width: 100%;
+   background-color: aquamarine;
+   font-family: "Proxima Nova";
+}
+
+.learning-paragraf {
+   font-family: "Roboto";
+   text-align: center;
+   font-weight: 700;
+   color: coral;
+   text-decoration: underline dotted;
+   font-size: 40px;
+   padding-top: 40px;
+}
+
+.inline-learning {
+   max-width: 800px;
+   margin: 0 auto;
+   /* display: none; */
+}
+.inline {
+   display: block;
+   margin: 40px auto;
+   font-size: 0;
+   margin-left: -5px;
+	margin-right: -5px;
+}
+.inline-content {
+   display: inline-block;
+   width: 33.3%;
+   padding-left: 5px;
+   padding-right: 5px;
+   font-size: 24px;
+   vertical-align: top;
+   background-color: blueviolet;
+}
+
+.inline-content2 {
+   display: inline-block;
+   width: 33.3%;
+   padding-left: 5px;
+   padding-right: 5px;
+   font-size: 24px;
+   vertical-align: top;
+   max-height: 350px;
+   overflow-y: scroll;
+   background-color: yellow;
+}
+
+.inline-content2 + .inline-content2 {
+   overflow: hidden;
+
+}
+
+.inline-content2 + .inline-content2 + .inline-content2 {
+   display: none;
+}
+.overflow-learning {
+   min-width: 100%;
+   padding-bottom: 40px;
+}
+
+.overflow {
+   max-width: 80%;
+   max-height: 500px;
+   margin: 0 auto;
+   overflow: auto;
+   padding-bottom: 40px;
+   text-align: justify;
+   background-color: #fff;
+}
+
+.footer {}
