@@ -161,7 +161,7 @@ body {
    color: #000;
    width: 100%;
    background: url("../img/shop_items/leaf_frame.png") no-repeat left 80%, url("../img/shop_items/flower_frame.png")no-repeat center right, rgba(30, 40, 50, 0.05);
-   padding: 80px 60px;
+   padding: 80px 0;
 }
 
 .ecommercial__wrapper {
