@@ -264,7 +264,7 @@ body {
    font-weight: 400;
    line-height: 222.2%;
    /* 40px/18 */
-   letter-spacing: 0;
+   letter-spacing: -1;
 }
 
 .skills {
@@ -325,6 +325,10 @@ body {
    letter-spacing: -1px;
    display: inline-block;
    width: 33.3%;
+}
+
+.footer__item.item:hover{
+   color: blueviolet;
 }
 
 .footer__item.item:nth-of-type(2){
