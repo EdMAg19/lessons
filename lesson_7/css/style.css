@@ -1,0 +1,352 @@
+/*------------fonts-------------*/
+
+/*-----локальні шрифти----*/
+@import url("fonts.css");
+
+/*------шрифти підключені з Google Fonts------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Exo:regular,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Orbitron:500&display=swap");
+/*------шрифти підключені через плагін Google Fonts-----*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:700&display=swap");
+
+
+@import url("https://fonts.googleapis.com/css?family=Quicksand:regular,500,600,700&display=swap");
+/*style reset*/
+@import url("reset.css");
+
+/*--for smooth scroll--*/
+html {
+   scroll-behavior: smooth;
+}
+
+/*main styles*/
+body {
+   width: 100%;
+}
+
+.header {}
+
+.header__menu {}
+
+.menu {
+   font-size: 0;
+   padding: 20px 0;
+   margin: 0 auto;
+   background: linear-gradient(45deg, rgba(193, 181, 255, 1) 22%, rgba(28, 214, 196, 0.8072478991596639) 56%, rgba(182, 177, 255, 0.7736344537815126) 86%);
+}
+
+.menu .item {
+   display: inline-block;
+   width: 25%;
+}
+
+.item__button {
+   color: #2b2929;
+   font-size: 16px;
+   font-family: "Proxima Nova", sans-serif;
+   font-weight: 400;
+   line-height: 187.5%;
+   /* 30px/16 */
+   display: block;
+   text-align: center;
+   margin: 0 5px;
+   border-radius: 5px;
+   border: 2px solid rgb(131, 149, 150);
+}
+
+.item__button:hover {
+   text-decoration: underline;
+   color: #fff;
+   background-color: #c8c8a2;
+}
+
+.item__button:active {
+   color: red;
+   background-color: #f5f500;
+}
+
+.item:nth-child(2) .item__button:hover {
+   background-color: aqua;
+   color: #2b2929;
+}
+
+.item:nth-child(2) .item__button:active {
+   color: red;
+   background-color: rgb(0, 170, 255);
+}
+
+.item:nth-child(3) .item__button:hover {
+   background-color: #f28383;
+}
+
+.item:nth-child(3) .item__button:active {
+   background-color: #ff6262;
+}
+
+.item:nth-child(5) .item__button:hover {
+   background-color: #c8ee82;
+   color: #2b2929;
+}
+
+.item:nth-child(5) .item__button:active {
+   background-color: #aaec30;
+   color: red;
+}
+
+/* ---------krovato-------------- */
+
+.main {
+   background-color: #d6d6d623;
+}
+
+.main__content {
+   width: 100%;
+   margin: 0 auto;
+}
+
+/* даний блок зроблений згідно з макетом але на ньому відпрацьовані пробні стилі */
+
+.content.shop {
+   width: 100%;
+   margin: 0 auto;
+   background-color: #fff;
+}
+
+.krovato__shop {
+   max-width: 1100px;
+   margin: 0 auto;
+   padding: 40px 15px;
+}
+
+
+.title {
+   text-align: center;
+   color: #2b2929;
+   font-size: 40px;
+   font-family: "Proxima Nova", sans-serif;
+   font-weight: 400;
+   line-height: 120%;
+   /* 48px/40 */
+   margin-bottom: 40px;
+}
+
+.krovato-img {
+   max-width: 100%;
+   margin-bottom: 40px;
+}
+
+.krovato-img:hover {
+   opacity: 0.5;
+
+}
+
+.krovato-img+.paragraf+.paragraf {
+   margin-bottom: 40px;
+}
+
+.krovato__shop>.paragraf {
+   color: #2b2929;
+   font-size: 16px;
+   font-family: "Proxima Nova", sans-serif;
+   font-weight: 400;
+   line-height: 187.5%;
+   /* 30px/16 */
+   margin-bottom: 20px;
+}
+
+.krovato__shop>.subtitle {
+   color: #2b2929;
+   font-size: 20px;
+   font-family: "Proxima Nova", sans-serif;
+   font-weight: 400;
+   line-height: 140%;
+   /* 28px/20 */
+   text-align: justify;
+   margin-bottom: 40px;
+}
+
+.list {
+   margin-bottom: 40px;
+}
+
+.list .item {
+   color: #2b2929;
+   font-size: 16px;
+   font-family: "Proxima Nova", sans-serif;
+   font-weight: 400;
+   line-height: 187.5%;
+   /* 30px/16 */
+   margin-bottom: 20px;
+   padding-left: 40px;
+}
+
+.list .item::before {
+   content: "";
+   position: relative;
+   top: 16px;
+   left: -8px;
+   background: url("../img/icons/mark.svg") no-repeat 0 0;
+   width: 32px;
+   height: 32px;
+   margin-left: -32px;
+}
+
+.list .item:first-of-type:hover::before {
+   transform: rotate(180deg);
+}
+
+.list .item:nth-of-type(2):hover::before {
+   transform: rotate(90deg);
+}
+
+.list .item:nth-of-type(3n+2):hover::before {
+   background-color: #4a72ff;
+}
+
+.list .item:nth-of-type(3):hover::before {
+   opacity: 0.3;
+}
+
+.list .item:nth-of-type(4):hover {
+   background: linear-gradient(287deg, rgba(255, 255, 81, 0.8352591036414566) 30%, rgba(42, 152, 254, 0.8072478991596639) 69%);
+}
+
+.list>*:last-child {
+   margin-bottom: 0;
+}
+
+.krovato__shop>*:last-child {
+   margin-bottom: 0;
+}
+
+/* ------------professional video editor------- */
+
+.portfolio {
+   font-family: "Exo", sans-serif;
+   width: 100%;
+}
+
+.wrapper {
+   width: 100%;
+   margin: 0 auto;
+   background: url("../img/backgrounds/default.jpg")no-repeat 0 0/ cover;
+   padding: 120px 80px;
+}
+
+.about-me {
+   max-width: 950px;
+   margin: 0 auto;
+   margin-bottom: 60px;
+}
+
+.about-me .title {
+   display: block;
+   color: #fff;
+   font-size: 60px;
+   font-weight: 700;
+   line-height: 116.67%;
+   /* 70px/60 */
+   text-transform: uppercase;
+}
+
+.about-me .title::after  {
+   content: "";
+   height: 1px;
+   width: 80%;
+   background: linear-gradient(94deg, rgba(255, 0, 0, 1) 20%, rgba(66, 255, 0, 1) 50%, rgba(36, 0, 255, 1) 84%);
+}
+
+.about-me .paragraf {
+   color: #fff;
+   font-size: 18px;
+   text-align: center;
+   font-weight: 400;
+   line-height: 222.2%;
+   /* 40px/18 */
+   letter-spacing: -1;
+}
+
+.skills {
+   width: 100%;
+   margin: 0 auto;
+}
+
+.skills__list {
+   width: 100%;
+   display: block;
+   margin: 0 auto;
+   font-size: 0;
+}
+
+.list__item {
+   display: inline-block;
+   margin: 0 auto;
+   text-align: center;
+   width: 25%;
+   color: #fff;
+   font-size: 20px;
+   font-family: "Orbitron",sans-serif;
+   font-weight: 500;
+   line-height: 125%; /* 25px/20 */
+}
+
+.list__item::after {
+   content: "";
+   font-size: 0;
+   width: 10px;
+   height: 10px;
+   margin-left: 15%;
+   border-radius: 50%;
+   background: linear-gradient(94deg, rgba(255, 0, 0, 1) 20%, rgba(66, 255, 0, 1) 50%, rgba(36, 0, 255, 1) 84%);
+}
+
+/* ----footer---- */
+
+.footer {
+   background-color: #000001;
+   padding: 20px 0;
+}
+.contacts {
+   margin-bottom: 80px;
+  
+}
+.footer__list { 
+   width: 100%;
+   margin: 0 auto;
+   font-size: 0;
+}
+.footer__item.item  {
+   color: #fff;
+   font-size: 20px;
+   text-align: center;
+   font-family: "Exo",sans-serif;
+   font-weight: 400;
+   letter-spacing: -1px;
+   display: inline-block;
+   width: 33.3%;
+}
+
+.footer__item.item:nth-of-type(2){
+   text-transform: capitalize;
+}
+
+.footer__item.item::before{
+   content: "";
+   width: 20px;
+   height: 20px;
+   margin-right: 10px;
+   vertical-align: bottom;
+}
+
+.footer__item.item:nth-of-type(1)::before{
+   background: url("../img/icons/call.svg") no-repeat 0 0;
+}
+.footer__item.item:nth-of-type(2)::before{
+   background: url("../img/icons/location.svg") no-repeat 0 0;
+}
+.footer__item.item:nth-of-type(3)::before{
+   background: url("../img/icons/email.svg") no-repeat 0 100%;
+}
+.item {
+}
