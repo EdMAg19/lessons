@@ -143,7 +143,7 @@ body {
 }
 
 /* .krovato-img+.paragraf+.paragraf {
-   margin-bottom: 40px;
+   margin-bottom: 10px;
 } */
 
 .krovato__shop .paragraf:not(:last-child){
@@ -157,7 +157,7 @@ body {
    font-weight: 400;
    line-height: 187.5%;
    /* 30px/16 */
-/*    margin-bottom: 20px; */
+   /* margin-bottom: 20px; */
 }
 
 .krovato__shop>.subtitle {
@@ -169,6 +169,7 @@ body {
    /* 28px/20 */
    text-align: justify;
    margin-bottom: 40px;
+   /* margin-top: 40px; */
 }
 
 .krovato__shop .subtitle:not(:first-child) {
@@ -192,8 +193,8 @@ body {
 
 .list .item::before {
    content: "";
-/*    position: relative;
-   top: 16px;
+   /*position: relative;
+    top: 16px;
    left: -8px; */
    background: url("../img/icons/mark.svg") no-repeat 0 0;
    width: 32px;
@@ -257,6 +258,7 @@ body {
    line-height: 116.67%;
    /* 70px/60 */
    text-transform: uppercase;
+  
 }
 
 .about-me .title::after  {
@@ -265,7 +267,7 @@ body {
    height: 1px;
    width: 60%;
    margin: 20px auto;
-   background: linear-gradient(94deg, rgba(255, 0, 0, 1) 20%, rgba(66, 255, 0, 1) 50%, rgba(36, 0, 255, 1) 84%);
+   background: linear-gradient(94deg, rgba(255, 0, 0, 0.257) 20%, rgba(66, 255, 0, 1) 50%, rgba(36, 0, 255, 1) 84%);
 }
 
 .about-me .paragraf {
@@ -275,7 +277,7 @@ body {
    font-weight: 400;
    line-height: 222.2%;
    /* 40px/18 */
-   letter-spacing: 0;
+   letter-spacing: -1;
 }
 
 .skills {
@@ -328,7 +330,7 @@ body {
    margin: 0 auto;
    font-size: 0;
 }
-.footer__item.item  {
+.footer__item  {
    color: #fff;
    font-size: 20px;
    text-align: center;
@@ -339,15 +341,15 @@ body {
    width: 33.3%;
 }
 
-.footer__item.item:hover{
+.footer__item:hover{
    color: blueviolet;
 }
 
-.footer__item.item:nth-of-type(2){
+.footer__item.item2{
    text-transform: capitalize;
 }
 
-.footer__item.item::before{
+.footer__item::before{
    content: "";
    width: 20px;
    height: 20px;
