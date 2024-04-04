@@ -1,0 +1,33 @@
+@import url("reset.css");
+
+.main {
+   padding: 20px;
+}
+.all-img {
+}
+.all-img__item p{
+   text-align: center;
+   text-shadow: 5px 5px 5px gray;
+   font-size: 40px;
+}
+
+.all-img__item>*:nth-child(1n+1) {
+   display: block;
+   margin-bottom: 20px;
+}
+
+.button {
+   display: block;
+   margin: 0 auto;
+   text-align: center;
+   text-shadow: 5px 5px 5px gray;
+   font-size: 40px; 
+   border: 1px solid #433939;
+   border-radius: 5px;
+   padding: 5px;
+}
+
+.button:hover{
+   color: brown;
+   background-color: gray;
+}
