@@ -261,8 +261,10 @@ body {
 
 .about-me .title::after  {
    content: "";
+   display: block;
    height: 1px;
-   width: 80%;
+   width: 60%;
+   margin: 20px auto;
    background: linear-gradient(94deg, rgba(255, 0, 0, 1) 20%, rgba(66, 255, 0, 1) 50%, rgba(36, 0, 255, 1) 84%);
 }
 
