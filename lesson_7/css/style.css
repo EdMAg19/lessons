@@ -134,6 +134,7 @@ body {
 .krovato-img {
    max-width: 100%;
    margin-bottom: 40px;
+   border-radius: 8px;
 }
 
 .krovato-img:hover {
