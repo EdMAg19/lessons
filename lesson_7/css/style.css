@@ -239,7 +239,7 @@ body {
 .wrapper {
    width: 100%;
    margin: 0 auto;
-   background: url("../img/backgrounds/default.jpg")no-repeat 0 0/ cover;
+   background: linear-gradient(151deg, rgba(0,0,0,0.9024859943977591) 0%, rgba(0,0,0,0.99) 100%), url("../img/backgrounds/default.jpg")no-repeat 0 0 / cover;
    padding: 120px 80px;
 }
 
@@ -303,6 +303,7 @@ body {
 .list__item::after {
    content: "";
    font-size: 0;
+   display: block;
    width: 10px;
    height: 10px;
    margin-left: 15%;
