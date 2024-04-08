@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Lesson 8</title>
+</head>
+
+<body>
+   <header class="header">
+      <div class="header__body menu">
+         <div class="menu__top-header">
+            <ul class="menu__top-items items-about">
+               <li>Про нас</li>
+               <li>Оплата</li>
+               <li>Доставка та збірка</li>
+               <li>Відгуки</li>
+               <li>Блог</li>
+               <li>Контакти</li>
+            </ul>
+            <div class="menu__support">
+               <p>Допомога і консультація:</p>
+               <!-- картинки соцмереж краще зробити фоном а не тегом -->
+               <a href="#" class="menu__social"><img src="img/svg/icon1.svg" alt="img"></a>
+               <a href="#" class="menu__social"><img src="img/svg/icon2.svg" alt="img"></a>
+               <a href="#" class="menu__social"><img src="img/svg/icon3.svg" alt="img"></a>
+               <span class="menu__languadge"></span>
+            </div>
+         </div>
+         <div class="header__middle">
+            <div class="header__logo logo-img">
+               <img class="logo" src="img/logo.png" alt="logo">
+            </div>
+            <div class="header__button">
+               <!-- тут вигружена svg іконка каталогу може бути стилізована через background -->
+               <a class="button" href="#">Каталог</a>
+            </div>
+            <div class="header__search-form">
+               <!-- знаю, що ми ще не вчили інпути але це я використав для наглядного прикладу -->
+               <input class="header__search-bar" type="text" placeholder="Пошук товарів">
+               <img src="img/svg/icon5.svg" alt="search" class="header__search-img">
+            </div>
+            <div class="header__contact phone-contact">
+               <!-- тут видно що є випадаюче меню
+               але я його зробив не через форму списку а через окремі елементи
+               для номеру та іконки 'стрілка в низ'.
+               іконку 'телефон' теж можна задати beckground'ом -->
+               <div class="header__number">Щодня з 9:00 до 18:00
+                  067 929-45-45
+                  <img src="img/svg/icon7.svg" alt="arrow">
+               </div>
+            </div>
+            <div class="header__section-select select-section">
+               <div class="select-section__like like-button">
+                  <a href="#" class="like-button__link">
+                     <!-- тут вигружена svg іконка може бути стилізована через background -->
+                     <img src="img/svg/icon8.svg" alt="image">
+                  </a>
+               </div>
+               <div class="select-section__to-buy to-buy-button">
+                  <a href="#" class="to-buy-button__link">
+                     <!-- тут вигружена svg іконка може бути стилізована через background -->
+                     <img src="img/svg/icon9.svg" alt="image">
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div class="header__bottom-row">
+            <div class="header__propositions proposition-list">
+               <ul class="proposition-list__items">
+                  <!-- тут вигружені svg іконки можна стилізовувати через background або через псевдоелемент
+                  тег img використаний для використання виведення картинок в браузер-->
+                  <li><img src="img/svg/icon10.svg" alt="img">Акції</li>
+                  <li><img src="img/svg/icon11.svg" alt="img">Розпродаж</li>
+                  <li><img src="img/svg/icon12.svg" alt="img">Купити в кредит</li>
+               </ul>
+            </div>
+            <div class="header__categories categories-list">
+               <ul class="categories-list__items">
+                  <li>Дитяча</li>
+                  <li>Кухня</li>
+                  <li>Ванна</li>
+                  <li>Спальня</li>
+                  <li>Передпокій</li>
+                  <li>Вітальня</li>
+                  <li>Офіс</li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </header>
+   <!--main part-->
+   <main class="main">
+      <div class="main__pop-categories goods-section">
+         <p class="goods-section__title title-categorie">Популярні категорії</p>
+         <div class="goods-section__cards">
+            <!-- знаю що далв по коду може бути порушена
+             вкладеність тегів але без css інакше не можу зробити))) -->
+            <div class="goods-section__card card-item">
+               <p class="card-item__text card-item__text--left">Ліжка</p>
+               <p class="card-item__text card-item__text--right">54</p>
+               <img src="img/img1.png" alt="furniture" class="card-item__img">
+               <a href="#" class="card-item__link">
+                  <img src="img/svg/arrow.svg" alt="arrow">
+               </a>
+            </div>
+            <div class="goods-section__card card-item">
+               <p class="card-item__text card-item__text--left">Матраци</p>
+               <p class="card-item__text card-item__text--right">30</p>
+               <img src="img/img2.png" alt="furniture" class="card-item__img">
+               <a href="#" class="card-item__link">
+                  <img src="img/svg/arrow.svg" alt="arrow">
+               </a>
+            </div>
+            <div class="goods-section__card card-item">
+               <p class="card-item__text card-item__text--left">М'які меблі</p>
+               <p class="card-item__text card-item__text--right">196</p>
+               <img src="img/img3.png" alt="furniture" class="card-item__img">
+               <a href="#" class="card-item__link">
+                  <img src="img/svg/arrow.svg" alt="arrow">
+               </a>
+            </div>
+            <div class="goods-section__card card-item">
+               <p class="card-item__text card-item__text--left">Шафи</p>
+               <p class="card-item__text card-item__text--right">79</p>
+               <img src="img/img4.png" alt="furniture" class="card-item__img">
+               <a href="#" class="card-item__link">
+                  <img src="img/svg/arrow.svg" alt="arrow">
+               </a>
+            </div>
+            <div class="goods-section__card card-item">
+               <p class="card-item__text card-item__text--left">Комоди</p>
+               <p class="card-item__text card-item__text--right">54</p>
+               <img src="img/img5.png" alt="furniture" class="card-item__img">
+               <a href="#" class="card-item__link">
+                  <img src="img/svg/arrow.svg" alt="arrow">
+               </a>
+            </div>
+            <div class="goods-section__card card-item">
+               <p class="card-item__text card-item__text--left">Тумби</p>
+               <p class="card-item__text card-item__text--right">64</p>
+               <img src="img/img6.png" alt="furniture" class="card-item__img">
+               <a href="#" class="card-item__link">
+                  <img src="img/svg/arrow.svg" alt="arrow">
+               </a>
+            </div>
+            <div class="goods-section__card card-item">
+               <p class="card-item__text card-item__text--left">Столи</p>
+               <p class="card-item__text card-item__text--right">35</p>
+               <img src="img/img7.png" alt="furniture" class="card-item__img">
+               <a href="#" class="card-item__link">
+                  <img src="img/svg/arrow.svg" alt="arrow">
+               </a>
+            </div>
+            <div class="goods-section__card card-item">
+               <p class="card-item__text card-item__text--left">Стільці</p>
+               <p class="card-item__text card-item__text--right">89</p>
+               <img src="img/img8.png" alt="furniture" class="card-item__img">
+               <a href="#" class="card-item__link">
+                  <img src="img/svg/arrow.svg" alt="arrow">
+               </a>
+            </div>
+            <div class="goods-section__card card-item">
+               <p class="card-item__text card-item__text--left">Меблеві стіни</p>
+               <p class="card-item__text card-item__text--right">724</p>
+               <img src="img/img9.png" alt="furniture" class="card-item__img">
+               <a href="#" class="card-item__link">
+                  <img src="img/svg/arrow.svg" alt="arrow">
+               </a>
+            </div>
+            <div class="goods-section__card card-item">
+               <p class="card-item__text card-item__text--left">Кухні</p>
+               <p class="card-item__text card-item__text--right">30</p>
+               <img src="img/img10.png" alt="furniture" class="card-item__img">
+               <a href="#" class="card-item__link">
+                  <img src="img/svg/arrow.svg" alt="arrow">
+               </a>
+            </div>
+         </div>
+      </div>
+      <div class="goods-section">
+         <div class="goods-section__body title">
+            <p class="title__categorie">Найпопулярніші товари</p>
+            <a href="#" class="title__get-more more-link">Дивитись всі
+               <img src="img/svg/small-arrow.svg" alt="">
+            </a>
+         </div>
+
+         <div class="goods-section__cards goods-section__cards--borders">
+            <div class="goods-section__item card-item">
+               <img src="img/img-item1.jpg" alt="image" class="card-item__img">
+               <div class="card-item__info info-product">
+                  <p>Розмір: 61 x 184 x 2130 мм</p>
+                  <p>Ліжко Спарта / Sparta з підйомним механізмом</p>
+                  <span><img src="img/svg/green-mark.png" alt="image">В наявності</span>
+               </div>
+            </div>
+
+            <div class="price">
+               <p class="price__item price__item--red">25 400 грн.</p>
+               <p class="price__item">15 400 грн.</p>
+            </div>
+            <div class="select-section">
+               <div class="select-section__like like-button">
+                  <a href="#" class="like-button__link--gray">
+                     <!-- тут вигружена svg іконка може бути стилізована через background -->
+                     <img src="img/svg/icon8-2.svg" alt="image">
+                  </a>
+               </div>
+               <div class="to-buy-button">
+                  <a href="#" class="to-buy-button__link">
+                     <!-- тут вигружена svg іконка може бути стилізована через background -->
+                     <img src="img/svg/icon9.svg" alt="image">
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div class="goods-section__cards goods-section__cards--borders">
+            <div class="goods-section__item card-item">
+               <img src="img/img-item2.jpg" alt="image" class="card-item__img">
+               <div class="card-item__info info-product">
+                  <p>Розмір: 61 x 184 x 2130 мм</p>
+                  <p>Ліжко Аргон з підйомним механізмом</p>
+                  <span><img src="img/svg/green-mark.png" alt="image">В наявності</span>
+               </div>
+            </div>
+
+            <div class="price">
+               <p class="price__item">16 400 грн.</p>
+            </div>
+            <div class="select-section">
+               <div class="select-section__like like-button">
+                  <a href="#" class="like-button__link--gray">
+                     <!-- тут вигружена svg іконка може бути стилізована через background -->
+                     <img src="img/svg/icon8-2.svg" alt="image">
+                  </a>
+               </div>
+               <div class="to-buy-button">
+                  <a href="#" class="to-buy-button__link">
+                     <!-- тут вигружена svg іконка може бути стилізована через background -->
+                     <img src="img/svg/icon9.svg" alt="image">
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div class="goods-section__cards goods-section__cards--borders">
+            <div class="goods-section__item card-item">
+               <img src="img/img-item3.jpg" alt="image" class="card-item__img">
+               <div class="card-item__info info-product">
+                  <p>Розмір: 61 x 184 x 2130 мм</p>
+                  <p>Ліжко Престиж з підйомним механізмом</p>
+                  <span><img src="img/svg/green-mark.png" alt="image">В наявності</span>
+               </div>
+            </div>
+
+            <div class="price">
+               <p class="price__item">14 969 грн.</p>
+            </div>
+            <div class="select-section">
+               <div class="select-section__like like-button">
+                  <a href="#" class="like-button__link--gray">
+                     <!-- тут вигружена svg іконка може бути стилізована через background -->
+                     <img src="img/svg/icon8-2.svg" alt="image">
+                  </a>
+               </div>
+               <div class="to-buy-button">
+                  <a href="#" class="to-buy-button__link">
+                     <!-- тут вигружена svg іконка може бути стилізована через background -->
+                     <img src="img/svg/icon9.svg" alt="image">
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div class="goods-section__cards goods-section__cards--borders">
+            <div class="goods-section__item card-item">
+               <img src="img/img-item4.jpg" alt="image" class="card-item__img">
+               <div class="card-item__info info-product">
+                  <p>Розмір: 61 x 184 x 2130 мм</p>
+                  <p>Диван Токіо-2</p>
+                  <span><img src="img/svg/green-mark.png" alt="image">В наявності</span>
+               </div>
+            </div>
+
+            <div class="price">
+               <p class="price__item">13 211 грн.</p>
+            </div>
+            <div class="select-section">
+               <div class="select-section__like like-button">
+                  <a href="#" class="like-button__link--gray">
+                     <!-- тут вигружена svg іконка може бути стилізована через background -->
+                     <img src="img/svg/icon8-2.svg" alt="image">
+                  </a>
+               </div>
+               <div class="to-buy-button">
+                  <a href="#" class="to-buy-button__link">
+                     <!-- тут вигружена svg іконка може бути стилізована через background -->
+                     <img src="img/svg/icon9.svg" alt="image">
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div class="goods-section__cards goods-section__cards--borders">
+            <div class="goods-section__item card-item">
+               <img src="img/img-item5.jpg" alt="image" class="card-item__img">
+               <div class="card-item__info info-product">
+                  <p>Розмір: 61 x 184 x 2130 мм</p>
+                  <p>Матрац Largo SLIM / Ларго Слім</p>
+                  <span><img src="img/svg/green-mark.png" alt="image">В наявності</span>
+               </div>
+            </div>
+
+            <div class="price">
+               <p class="price__item price__item--red">3 122 грн.</p>
+               <p class="price__item">2 810 грн.</p>
+            </div>
+            <div class="select-section">
+               <div class="select-section__like like-button">
+                  <a href="#" class="like-button__link--gray">
+                     <!-- тут вигружена svg іконка може бути стилізована через background -->
+                     <img src="img/svg/icon8-2.svg" alt="image">
+                  </a>
+               </div>
+               <div class="to-buy-button">
+                  <a href="#" class="to-buy-button__link">
+                     <!-- тут вигружена svg іконка може бути стилізована через background -->
+                     <img src="img/svg/icon9.svg" alt="image">
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div class="goods-section__cards goods-section__cards--borders">
+            <div class="goods-section__item card-item">
+               <img src="img/img-item6.jpg" alt="image" class="card-item__img">
+               <div class="card-item__info info-product">
+                  <p>Розмір: 61 x 184 x 2130 мм</p>
+                  <p>Матрац ARGENTUM AMALTEA / Аргентум Амалті</p>
+                  <span><img src="img/svg/green-mark.png" alt="image">В наявності</span>
+               </div>
+            </div>
+
+            <div class="price">
+               <p class="price__item price__item--red">5 966 грн.</p>
+               <p class="price__item">5 071 грн.</p>
+            </div>
+            <div class="select-section">
+               <div class="select-section__like like-button">
+                  <a href="#" class="like-button__link--gray">
+                     <!-- тут вигружена svg іконка може бути стилізована через background -->
+                     <img src="img/svg/icon8-2.svg" alt="image">
+                  </a>
+               </div>
+               <div class="to-buy-button">
+                  <a href="#" class="to-buy-button__link">
+                     <!-- тут вигружена svg іконка може бути стилізована через background -->
+                     <img src="img/svg/icon9.svg" alt="image">
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div class="goods-section__cards goods-section__cards--borders">
+            <div class="goods-section__item card-item">
+               <img src="img/img-item7.jpg" alt="image" class="card-item__img">
+               <div class="card-item__info info-product">
+                  <p>Розмір: 61 x 184 x 2130 мм</p>
+                  <p>Диван Браво</p>
+                  <span><img src="img/svg/green-mark.png" alt="image">В наявності</span>
+               </div>
+            </div>
+
+            <div class="price">
+               <p class="price__item">15 400 грн.</p>
+            </div>
+            <div class="select-section">
+               <div class="select-section__like like-button">
+                  <a href="#" class="like-button__link--gray">
+                     <!-- тут вигружена svg іконка може бути стилізована через background -->
+                     <img src="img/svg/icon8-2.svg" alt="image">
+                  </a>
+               </div>
+               <div class="to-buy-button">
+                  <a href="#" class="to-buy-button__link">
+                     <!-- тут вигружена svg іконка може бути стилізована через background -->
+                     <img src="img/svg/icon9.svg" alt="image">
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div class="goods-section__cards goods-section__cards--borders">
+            <div class="goods-section__item card-item">
+               <img src="img/img-item8.jpg" alt="image" class="card-item__img">
+               <div class="card-item__info info-product">
+                  <p>Розмір: 61 x 184 x 2130 мм</p>
+                  <p>Ліжко МК-5</p>
+                  <span><img src="img/svg/green-mark.png" alt="image">В наявності</span>
+               </div>
+            </div>
+
+            <div class="price">
+               <p class="price__item price__item--red">25 400 грн.</p>
+               <p class="price__item">15 400 грн.</p>
+            </div>
+            <div class="select-section">
+               <div class="select-section__like like-button">
+                  <a href="#" class="like-button__link--gray">
+                     <!-- тут вигружена svg іконка може бути стилізована через background -->
+                     <img src="img/svg/icon8-2.svg" alt="image">
+                  </a>
+               </div>
+               <div class="to-buy-button">
+                  <a href="#" class="to-buy-button__link">
+                     <!-- тут вигружена svg іконка може бути стилізована через background -->
+                     <img src="img/svg/icon9.svg" alt="image">
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </main>
+   <footer class="footer">
+   </footer>
+</body>
+
+</html>
