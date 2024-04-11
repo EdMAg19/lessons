@@ -155,7 +155,7 @@ body {
    display: block;
 }
 
-.sub-items > *:nth-child() {
+.sub-items > *{
    overflow: hidden;
 }
 .sub-items {
