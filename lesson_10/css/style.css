@@ -310,7 +310,6 @@ body {
 
 .container__link:hover::after{
    transform: rotate(45deg);
-   cursor: pointer;
 }
 
 .footer {
