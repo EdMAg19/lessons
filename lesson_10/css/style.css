@@ -291,13 +291,13 @@ body {
    margin-bottom: 10px;
 }
 
-.container__link {
+.container__arrow {
    position: absolute;
    bottom: 0;
    right: 0;
 }
 
-.container__link::after{
+.container__arrow::after{
    content: '';
    background: url('../img/svg/arrow2.svg')0 0 no-repeat;
    width: 50px;
@@ -308,7 +308,7 @@ body {
    transition: 0.5s;
 }
 
-.container__link:hover::after{
+.container__arrow:hover::after{
    transform: rotate(45deg);
 }
 
