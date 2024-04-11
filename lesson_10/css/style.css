@@ -87,7 +87,7 @@ body {
    display: none;
    width: 300px;
    position: absolute;
-   top: 120%;
+   top: 100%;
    left: 25%;
    background-color: rgb(255, 255, 255);
    font-weight: 600;
@@ -155,7 +155,7 @@ body {
    display: block;
 }
 
-.sub-items > *{
+.sub-items > * {
    overflow: hidden;
 }
 .sub-items {
@@ -199,14 +199,16 @@ body {
 .main {}
 
 .containe {
-   max-width: 1500px;
+   max-width: 1300px;
    padding: 40px;
    font-size: 0;
    margin: 0 auto;
+   text-align: center;
 }
 
 .container__card {
    display: inline-block;
+   width: 18.5%;
    max-width: 20%;
    position: relative;
    text-align: center;
@@ -219,8 +221,10 @@ body {
    border-radius: 8px;
    transition: 0.5s;
    box-shadow: 2px 2px 5px gray;
-   background-color: #fff;
-   margin: 0 10px 20px;
+   background-color: hsla(0, 0%, 100%, 0.235);
+   margin: 0 5px 20px;
+   z-index: 5;
+   overflow: clip;
 }
 
 .container__card:hover {
@@ -230,8 +234,27 @@ body {
 
 .container__link-card {
    display: block;
-   background: url('../img/ellipse.png')0 100% no-repeat;
+   position: relative;
+   /* background: url('../img/ellipse.png') 50% 100% no-repeat; */
    border-radius: 8px;
+   z-index: 5;
+}
+
+.container__link-card::after {
+   content: '';
+   position: absolute;
+   background-color: rgb(247, 247, 247);
+   width: 100%;
+   height: 100%;
+   top: 50%;
+   left: 0;
+   z-index: -1;
+   border-radius: 50%;
+}
+
+.container__link-card img {
+   width: 100%;
+   /* background: url(../img/ellipse.png) 0 100% no-repeat; */
 }
 
 .container__title {
@@ -266,7 +289,7 @@ body {
    position: absolute;
    bottom: 20px;
    right: 20px;
-   transition: 0.5s;
+   transition: 0.2s;
 }
 
 .container__arrow:hover::after {
