@@ -260,7 +260,7 @@ html {
 
 .cap__front {
    background: url("../img/pikachu-front.avif") center no-repeat;
-   transform: rotateX(-180deg);
+   transform: rotateY(-180deg);
    background-size: cover;
    backface-visibility: hidden;
 }
@@ -269,18 +269,18 @@ html {
    background: url("../img/pngwing.com.png") center no-repeat;
    background-size: cover;
    /* transform: scale(1.1); */
-   transform: rotateX(0deg);
+   transform: rotateY(0deg);
    backface-visibility: hidden;
 }
 
 .cap:hover .cap__front {
-   transform: rotateX(0deg);
+   transform: rotateY(0deg);
    backface-visibility: hidden;
    z-index: 5;
 }
 
 .cap:hover .cap__back {
-   transform: rotateX(180deg);
+   transform: rotateY(180deg);
    /* transform: scale(1.1); */
    backface-visibility: visible;
 }
