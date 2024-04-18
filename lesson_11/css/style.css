@@ -549,7 +549,7 @@ html {
    position: absolute;
    bottom: 0px;
    left: -100px;
-   transform-origin: 10px, 0px;
+   transform-origin: 10px 0px;
    transform: translate(-5px, -26px) rotate(25deg) skew(25deg, 0deg);
    z-index: 50;
 }
