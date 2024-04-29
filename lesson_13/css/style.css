@@ -116,7 +116,7 @@ h2 {
    content: '';
    width: 24px;
    height: 24px;
-   background: url(/img/header/icons/arrow-down.svg) 0 0 no-repeat;
+   background: url(../img/header/icons/arrow-down.svg) 0 0 no-repeat;
 }
 
 .languadge__hide-menu{
