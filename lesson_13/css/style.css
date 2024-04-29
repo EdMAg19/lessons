@@ -116,7 +116,7 @@ h2 {
    content: '';
    width: 24px;
    height: 24px;
-   background: url(../img/header/icons/arrow-down.svg) 0 0 no-repeat;
+   background: url(/img/header/icons/arrow-down.svg) 0 0 no-repeat;
 }
 
 .languadge__hide-menu{
@@ -190,7 +190,7 @@ h2 {
    content: '';
    width: 24px;
    height: 24px;
-   background: url('/img/header/icons/menu-catalog.svg');
+   background: url('../img/header/icons/menu-catalog.svg');
 }
 
 .search-container {
@@ -348,13 +348,13 @@ h2 {
    position: absolute;
 }
 .actions-left>ul>li:nth-child(1):before {
-   background: url('/img/header/icons/akcii.svg') 0 0 / cover no-repeat;
+   background: url('../img/header/icons/akcii.svg') 0 0 / cover no-repeat;
 }
 .actions-left>ul>li:nth-child(2):before {
-   background: url('/img/header/icons/vidsotki.svg') 0 0 / cover no-repeat;
+   background: url('../img/header/icons/vidsotki.svg') 0 0 / cover no-repeat;
 }
 .actions-left>ul>li:nth-child(3):before {
-   background: url('/img/header/icons/vector.svg') 0 0 / cover no-repeat;
+   background: url('../img/header/icons/vector.svg') 0 0 / cover no-repeat;
 }
 .actions-right>ul {
    display: flex;
@@ -497,7 +497,7 @@ h2 {
    content: '';
    width: 12px;
    height: 12px;
-   background: url('/img/main/icons/arrow-vector.svg');
+   background: url('../img/main/icons/arrow-vector.svg');
    margin-left: 10px;
    transition: 0.2s;
 }
@@ -556,7 +556,7 @@ h2 {
    height: 12px;
    margin-right: 5px;
    vertical-align: middle;
-   background: url('/img/main/icons/mark-vector.svg') 0 0 / cover no-repeat;
+   background: url('../img/main/icons/mark-vector.svg') 0 0 / cover no-repeat;
 
 }
 .description-text h3 {
@@ -594,21 +594,21 @@ h2 {
 }
 
 .activity-block__right > a:first-child {
-   background: url('/img/main/icons/obrane-grey.svg') 0 0 / cover no-repeat;
+   background: url('../img/main/icons/obrane-grey.svg') 0 0 / cover no-repeat;
    transition: 0.2s;
 }
 
 .activity-block__right > a:first-child:hover {
-   background: url('/img/header/icons/obrane.svg') 0 0 / cover no-repeat;
+   background: url('../img/header/icons/obrane.svg') 0 0 / cover no-repeat;
 }
 
 .activity-block__right > a:nth-child(2) {
-   background: url('/img/header/icons/korzina.svg') 0 0 / cover no-repeat;
+   background: url('../img/header/icons/korzina.svg') 0 0 / cover no-repeat;
    transition: 0.2s;
 }
 
 .activity-block__right > a:nth-child(2):hover {
-   background: url('/img/header/icons/korzina.svg') 0 0 / cover no-repeat, rgb(255, 188, 87);
+   background: url('../img/header/icons/korzina.svg') 0 0 / cover no-repeat, rgb(255, 188, 87);
 }
 
 img[alt="like"]:hover{
@@ -644,10 +644,10 @@ img[alt="like"]:hover{
    margin-right: 20px;
 }
 .sales__slider a:nth-child(1) {
-   background: url('/img/main/icons/arrow-left.svg') 0 0 / cover no-repeat;
+   background: url('../img/main/icons/arrow-left.svg') 0 0 / cover no-repeat;
 }
 .sales__slider a:nth-child(2) {
-   background: url('/img/main/icons/arrow-right.svg') 0 0 / cover no-repeat;
+   background: url('../img/main/icons/arrow-right.svg') 0 0 / cover no-repeat;
 }
 
 .sales__slider a:nth-child(1):hover, .sales__slider a:nth-child(2):hover {
