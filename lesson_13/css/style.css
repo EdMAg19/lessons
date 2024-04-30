@@ -530,7 +530,9 @@ h2 {
 .goods__card:hover {
    box-shadow: 0 0 8px 0 rgba(0,0,0,0.6);
 }
-.goods__link{}
+.goods__link{
+	flex: 1;
+}
 .goods__img{
    width: 100%;
 }
