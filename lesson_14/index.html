@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Lesson 14</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__container">
+            <div class="body-header">
+               <div class="body-header__part">
+                  <div class="body-header__top body-header__top--box block-top">
+                     <div class="block-top__left">
+                        <ul>
+                           <li><a href="#">Про нас</a></li>
+                           <li><a href="#">Оплата</a></li>
+                           <li><a href="#">Доставка та збірка</a></li>
+                           <li><a href="#">Відгуки</a></li>
+                           <li><a href="#">Блог</a></li>
+                           <li><a href="#">Контакти</a></li>
+                        </ul>
+                     </div>
+                     <div class="block-top__right">
+                        <ul>
+                           <li>Допомога і консультація:</li>
+                           <li><a href="#"><img src="img/header/icons/whatsapp.svg" alt="whatsup"></a></li>
+                           <li><a href="#"><img src="img/header/icons/telegram.svg" alt="telegram"></a></li>
+                           <li><a href="#"><img src="img/header/icons/viber.svg" alt="viber"></a></li>
+                        </ul>
+                        <div class="languadge">
+                           <form action="#">
+                              <select name="lang" class="languadge__select">
+                                 <option value="">UA</option>
+                                 <option value="">EN</option>
+                                 <option value="">EN</option>PL
+                              </select>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="body-header__part">
+                  <div class="body-header__center body-header__center--box">
+                     <div class="logo"><a href="#"><img src="img/header/logo.png" alt="logo"></a></div>
+                     <div class="catalog-link"><a href="#">Каталог</a></div>
+                     <div class="search-container">
+                        <form action="#">
+                           <input type="search" placeholder="Пошук товарів" name="search">
+                           <button type="submit"><img src="img/header/icons/poisk.svg" alt="search"></button>
+                        </form>
+                     </div>
+                     <div class="contacts">
+                        <div class="contacts__image"><a href="#"><img src="img/header/icons/icon-tel.svg" alt=""></a>
+                        </div>
+                        <div class="contacts__numbers contacts__numbers--visible">
+                           <a href="#">Щодня з 9:00 до 18:00</a>
+                           <a href="#">067 929-45-45</a>
+                        </div>
+                        <div class="hide-contacts">
+                           <img src="img/header/icons/arrow-down.svg" alt="arrow">
+                           <div class="hide-contacts__items">
+                              <a href="#">068 929-45-45</a>
+                              <a href="#">099 929-45-45</a>
+                              <a href="#">093 929-45-45</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="like-icon"><a href="#"><img src="img/header/icons/obrane.svg" alt="like"></a></div>
+                     <div class="basket-icon"><a href="#"><img src="img/header/icons/korzina.svg" alt="basket"></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="body-header__part">
+                  <div class="body-header__bottom body-header__bottom--box">
+                     <div class="actions-left">
+                        <ul>
+                           <li><a href="#">Акції</a></li>
+                           <li><a href="#">Розпродаж</a></li>
+                           <li><a href="#">Купити в кредит</a></li>
+                        </ul>
+                     </div>
+                     <div class="actions-right">
+                        <ul>
+                           <li><a href="#">Дитяча</a></li>
+                           <li><a href="#">Кухня</a></li>
+                           <li><a href="#">Ванна</a></li>
+                           <li><a href="#">Спальня</a></li>
+                           <li><a href="#">Передпокій</a></li>
+                           <li><a href="#">Вітальня</a></li>
+                           <li><a href="#">Офіс</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+
+      </header>
+      <main class="main">
+         <div class="navigation">
+            <div class="navigation__status navigation__status--box">
+               <a href="#">Головна</a>
+               <img src="img/main/icons/arrow-right-gray.svg" alt="arrow">
+               <a href="#">Кошик</a>
+            </div>
+         </div>
+         <form class="placing-order">
+            <div class="placing-order__body placing-order__body--box">
+               <h2>Оформлення замовлення</h2>
+               <div class="order-area">
+                  <div class="order-area__form">
+                     <div class="order-area__customer-info order-area__customer-info--flex-container">
+                        <div class="order-area__title order-area__title--h3 form-title">
+                           <img src="img/main/icons/icon-info.svg" alt="info">
+                           <h3>Інформація про покупця</h3>
+                        </div>
+                        <div class="form-area" method="get" enctype="multipart/form-data" action="#">
+                           <div class="form-area__fields">
+                              <input required tabindex="1" name="surname" placeholder="Прізвище" type="text">
+                              <input required tabindex="4" name="phone-number" placeholder="Контактний телефон"
+                                 type="text">
+                              <input required tabindex="2" name="name" placeholder="Ім’я" type="text">
+                              <input required tabindex="5" name="email" placeholder="E-mail" type="text">
+                              <input required tabindex="3" name="second-name" placeholder="По батькові" type="text">
+                           </div>
+                           <div class="receiver">
+                              <input id="receiver" class="receiver__check" autocomplete="off" name="receiver"
+                                 type="checkbox">
+                              <label for="receiver">Отримуватиме замовлення інша людина</label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="order-area__delivery order-area__delivery--flex-container">
+                        <fieldset class="form-area">
+                           <legend class="form-area__title form-area__title--h3 delivery-title">Вибір способу доставки
+                           </legend>
+                           <ul class="ship">
+                              <li class="ship__card">
+                                 <input type="radio" name="delivery-method" value="take-away" id="take-away" checked>
+                                 <label for="take-away">
+                                    <img src="img/main/icons/shop.svg" alt="shop">
+                                    <span>Самовивіз із магазину</span>
+                                    <span class="delivery-price">Бесплатно</span>
+                                 </label>
+                              </li>
+                              <li class="ship__card">
+                                 <input type="radio" name="delivery-method" value="nova-poshta" id="nova-poshta">
+                                 <label for="nova-poshta">
+                                    <img src="img/main/icons/nova-poshta.svg" alt="nova-poshta">
+                                    <span>Доставка Нова Пошта</span>
+                                    <span class="delivery-price">≈ від 500 грн</span>
+                                 </label>
+                              </li>
+                              <li class="ship__card">
+                                 <input type="radio" name="delivery-method" value="courier" id="courier">
+                                 <label for="courier">
+                                    <img src="img/main/icons/client-shape.png" alt="client-shape">
+                                    <span>Доставка кур'єром</span>
+                                    <span class="delivery-price">≈ від 200 грн</span>
+                                 </label>
+                              </li>
+                           </ul>
+                        </fieldset>
+
+                        <div class="shop-location-body">
+                           <img src="img/main/icons/location.svg" alt="location">
+                           <div class="address">
+                              <p>Графік роботи: щодня з 9:00 до 18:00
+                              </p>
+                              <p>м. Київ, пров. Ізяславський 52, пов. 2</p>
+                           </div>
+                           <a class="navigation-link">На мапі</a>
+                        </div>
+                     </div>
+                     <div class="order-area__payment order-area__payment--flex-container payment">
+                        <fieldset class="payment__container">
+                           <legend class="payment__title payment__title--h3 form-title">
+                              Вибір способу оплати
+                           </legend>
+                           <div class="payment__items">
+                              <label class="payment__item" for="cash">
+                                 <input class="payment__input" type="radio" id="cash" name="payment-method"
+                                    value="cash">
+                                 <span>Готівкою при отриманні (Післясплата)</span>
+                              </label>
+                              <label class="payment__item for=" card">
+                                 <input class="payment__input" type="radio" id="card" name="payment-method"
+                                    value="card">
+                                 <span>Оплата карткою на сайті</span>
+                                 <img src="img/main/icons/mastercard.svg" alt="mastercard">
+                                 <img src="img/main/icons/visa-card-logo.svg" alt="visa-card">
+                              </label>
+                              <label class="payment__item" for="privat-pay">
+                                 <input class="payment__input" type="radio" id="privat-pay" name="payment-method"
+                                    value="privat-pay">
+                                 <span>Privat Pay</span>
+                                 <img src="img/main/icons/privat-pay-logo.svg" alt="privat-pay">
+                              </label>
+                              <label class="payment__item" for="credit">
+                                 <input class="payment__input" type="radio" id="credit" name="payment-method"
+                                    value="credit">
+                                 <span>Кредит від Krovato</span>
+                              </label>
+                              <label class="payment__item" for="privat-bank">
+                                 <input class="payment__input" type="radio" id="privat-bank" name="payment-method"
+                                    value="privat-bank">
+                                 <span>Оплата частинами ПриватБанк</span>
+                                 <img src="img/main/icons/privaty-credit-logo.svg" alt="privat-bank">
+                              </label>
+                              <label class="payment__item" for="mono-bank">
+                                 <input class="payment__input" type="radio" id="mono-bank" name="payment-method"
+                                    value="mono-bank">
+                                 <span>Оплата частинами МоноБанк</span>
+                                 <img src="img/main/icons/mono-bank.svg" alt="mono-bank">
+                              </label>
+                           </div>
+                        </fieldset>
+                     </div>
+                     <div class="order-area__comment order-area__comment--flex-container client-comment">
+                        <fieldset class="client-comment__container">
+                           <legend class="client-comment__title client-comment__title--h3">Коментар до замовлення
+                           </legend>
+                           <textarea class="client-comment__textarea" name="comment" id="comment"
+                              placeholder="Ваш коментар"></textarea>
+                        </fieldset>
+                     </div>
+                  </div>
+                  <div class="order-area__basket">
+                     <div class="order-area__wrapper">
+                        <h3 class="order-area__title order-area__title--h3">Ваш кошик<span>4</span></h3>
+                        <div class="order-area__item">
+                           <div class="order-area__card card-part">
+                              <div class="card-part__left">
+                                 <div class="card-part__image-item"><img src="img/main/img-item1.jpg" alt="item"></div>
+
+                                 <div class="quantity">
+                                    <button type="button" class="minus"><img src="img/main/icons/minus.svg"
+                                          alt="minus"></button>
+                                    <!-- знаю що цей елемент інакше робиться, але без JS це найпростіший шлях))) -->
+                                    <input type="text" name="quantity" value="1">
+                                    <button type="button" class="plus"><img src="img/main/icons/plus.svg"
+                                          alt="plus"></button>
+                                 </div>
+                              </div>
+                              <div class="card-part__right">
+                                 <p class="size">Розмір: 61 x 184 x 2130 мм</p>
+                                 <h4>Ліжко Спарта / Sparta з підйомним механізмом</h4>
+                                 <p class="status">В наявності</p>
+                                 <div class="prices">
+                                    <p class="prices__current">15 400 грн.</p>
+                                    <p class="prices__current prices__current--red">25 400 грн.</p>
+                                 </div>
+                              </div>
+                              <div class="card-part__delete-button">
+                                 <button class="delete" type="button"><img src="img/main/icons/delete.svg"
+                                       alt=""></button>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="order-area__item">
+                           <div class="order-area__card card-part">
+                              <div class="card-part__left">
+                                 <div class="card-part__image-item"><img src="img/main/img-item4.jpg" alt="item"></div>
+
+                                 <div class="quantity">
+                                    <button type="button" class="minus"><img src="img/main/icons/minus.svg"
+                                          alt="minus"></button>
+                                    <!-- знаю що цей елемент інакше робиться, але без JS це найпростіший шлях))) -->
+                                    <input type="text" name="quantity" value="1">
+                                    <button type="button" class="plus"><img src="img/main/icons/plus.svg"
+                                          alt="plus"></button>
+                                 </div>
+                              </div>
+                              <div class="card-part__right">
+                                 <p class="size">Розмір: 61 x 184 x 2130 мм</p>
+                                 <h4>Диван Токіо-2</h4>
+                                 <p class="status">В наявності</p>
+                                 <div class="prices">
+                                    <p class="prices__current">13 211 грн.</p>
+                                    <p class="prices__current prices__current--red">25 400 грн.</p>
+                                 </div>
+                              </div>
+                              <div class="card-part__delete-button">
+                                 <button class="delete" type="button"><img src="img/main/icons/delete.svg"
+                                       alt=""></button>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="order-area__item">
+                           <div class="order-area__card card-part">
+                              <div class="card-part__left">
+                                 <div class="card-part__image-item"><img src="img/main/img-item6.jpg" alt="item"></div>
+
+                                 <div class="quantity">
+                                    <button type="button" class="minus"><img src="img/main/icons/minus.svg"
+                                          alt="minus"></button>
+                                    <!-- знаю що цей елемент інакше робиться, але без JS це найпростіший шлях))) -->
+                                    <input type="text" name="quantity" value="1">
+                                    <button type="button" class="plus"><img src="img/main/icons/plus.svg"
+                                          alt="plus"></button>
+                                 </div>
+                              </div>
+                              <div class="card-part__right">
+                                 <p class="size">Розмір: 61 x 184 x 2130 мм</p>
+                                 <h4>Матрац ARGENTUM AMALTEA / Аргентум Амалті</h4>
+                                 <p class="status">В наявності</p>
+                                 <div class="prices">
+                                    <p class="prices__current">5 071</p>
+                                 </div>
+                              </div>
+                              <div class="card-part__delete-button">
+                                 <button class="delete" type="button"><img src="img/main/icons/delete.svg"
+                                       alt=""></button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="order-area__promo promo-container">
+                        <p class="promo-container__text">Є промокод?</p>
+                        <input type="text" class="promo-container__text-input" placeholder="Введіть код">
+                        <button class="promo-container__submit" type="submit">OK</button>
+                     </div>
+                     <div class="order-area__total total-container">
+                        <div class="total-container__result">
+                           <h3 class="total-container__title total-container__title--h3">Разом:</h3>
+                           <ul>
+                              <li><span>4 товари на суму:</span><span class="dots"></span><span>540 269 грн.</span></li>
+                              <li><span>Вартість доставки:</span><span class="dots"></span><span>За тарифами
+                                    оператора</span></li>
+                              <li><span><span></span>До оплати:</span><span class="dots"></span><span>540 269
+                                    грн.</span></li>
+                           </ul>
+                        </div>
+                        <div class="total-container__shop-feedback">
+                           <input id="shop-call-feedback" type="checkbox">
+                           <label for="shop-call-feedback">Не передзвонюйте мені для підтвердження замовлення</label>
+                        </div>
+                        <div class="total-container__submit-order">
+                           <button type="submit">ОФОРМИТИ ЗАМОВЛЕННЯ
+                           </button>
+                        </div>
+                        <p>Підтверджуючи замовлення, я приймаю умови <a href="#">Угоди користувача</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </form>
+         <div class="service-propositions">
+            <div class="service-propositions__container service-propositions__container--box">
+               <a href="#" class="service-propositions__option">
+                  <img src="img/main/icons/free-delivery.svg" alt="delivery">
+                  <p>Безкоштовна доставка</p>
+               </a>
+               <a href="#" class="service-propositions__option">
+                  <img src="img/main/icons/free-packing.svg" alt="free-packing">
+                  <p>Безкоштовна збірка</p>
+               </a>
+               <a href="#" class="service-propositions__option">
+                  <img src="img/main/icons/service.svg" alt="service">
+                  <p>Післягарантійне обслуговування</p>
+               </a>
+               <a href="#" class="service-propositions__option">
+                  <img src="img/main/icons/sales.svg" alt="sales">
+                  <p>Знижки клієнтам</p>
+               </a>
+            </div>
+         </div>
+      </main>
+      <footer class="footer">
+         <div class="footer__body footer__body--box">
+            <div class="footer__text"> Freelance lifestyle course 2024.</div>
+         </div>
+      </footer>
+   </div>
+</body>
+
+</html>
