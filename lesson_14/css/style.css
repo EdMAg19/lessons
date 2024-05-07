@@ -543,7 +543,7 @@ h2 {
 }
 
 .receiver__check:checked+label::before {
-   background: url('/img/main/icons/active.svg') center / 26px 26px no-repeat;
+   background: url('../img/main/icons/active.svg') center / 26px 26px no-repeat;
    /* background-color: rgb(255, 188, 87); */
 }
 
@@ -596,7 +596,7 @@ fieldset.form-area {
    content: "";
    width: 60px;
    height: 60px;
-   background: url("/img/main/icons/icon-dostavka.svg") center / contain no-repeat;
+   background: url("../img/main/icons/icon-dostavka.svg") center / contain no-repeat;
 }
 .ship {
    display: flex;
@@ -661,7 +661,7 @@ fieldset.form-area {
    position: absolute;
    width: 40px;
    height: 40px;
-   background: url("/img/main/icons/checked.svg") center / contain no-repeat;
+   background: url("../img/main/icons/checked.svg") center / contain no-repeat;
    transition: all 0.2s;
    transform: rotateY(90deg);
 }
@@ -729,7 +729,7 @@ fieldset.form-area {
    content: "";
    width: 24px;
    height: 24px;
-   background: url("/img/main/icons/map.svg") center / contain no-repeat;
+   background: url("../img/main/icons/map.svg") center / contain no-repeat;
 }
 /* ------------------------------------------------------------- */
 
@@ -745,7 +745,7 @@ fieldset.form-area {
    content: "";
    width: 60px;
    height: 60px;
-   background: url("/img/main/icons/icon-oplata.svg") center / contain no-repeat;
+   background: url("../img/main/icons/icon-oplata.svg") center / contain no-repeat;
 }
 .payment__items {
    display: flex;
@@ -786,7 +786,7 @@ fieldset.form-area {
 }
 
 .payment__input:checked + span::before {
-   background: url("/img/main/icons/checked.svg") center / 24px no-repeat;
+   background: url("../img/main/icons/checked.svg") center / 24px no-repeat;
    border: none;
 }
 /* ------------------------------------------------------------------------- */
@@ -805,7 +805,7 @@ fieldset.form-area {
    content: "";
    width: 60px;
    height: 60px;
-   background: url("/img/main/icons/icon-comment.svg") center / cover no-repeat;
+   background: url("../img/main/icons/icon-comment.svg") center / cover no-repeat;
 }
 .client-comment__title--h3 {
 }
@@ -930,7 +930,7 @@ fieldset.form-area {
    left: 0px;
    width: 12px;
    height: 12px;
-   background: url('/img/main/icons/mark-vector.svg') center / contain no-repeat;
+   background: url('../img/main/icons/mark-vector.svg') center / contain no-repeat;
 }
 
 .prices {
@@ -990,7 +990,7 @@ fieldset.form-area {
    content: "";
    width: 27px;
    height: 27px;
-   background: url("/img/main/icons/vaucher.svg") center / cover no-repeat;
+   background: url("../img/main/icons/vaucher.svg") center / cover no-repeat;
 }
 .promo-container__text-input {
    border: 1px solid rgb(209, 213, 213);
@@ -1072,7 +1072,7 @@ fieldset.form-area {
 }
 
 #shop-call-feedback:checked + label::before{
-   background: url("/img/main/icons/active.svg") center no-repeat;
+   background: url("../img/main/icons/active.svg") center no-repeat;
 }
 .total-container__shop-feedback label{
    display: flex;
