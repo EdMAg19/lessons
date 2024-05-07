@@ -1088,6 +1088,7 @@ fieldset.form-area {
    content: "";
    width: 20px;
    height: 20px;
+   flex-shrink: 0;
    border: 2px solid rgb(209, 213, 213);
    border-radius: 1px;
    margin: 2px;
