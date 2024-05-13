@@ -328,7 +328,6 @@ h2 {
 
 .contacts__numbers.contacts__numbers--visible:hover>a:not(:first-child) {
    color: rgb(255, 172, 47);
-   ;
 }
 
 
@@ -508,7 +507,10 @@ h2 {
 .form-title {
 }
 
-.form-area {
+.order-area__customer-info .form-area {
+   display: flex;
+   flex-direction: column;
+   row-gap: 20px;
 }
 
 .form-area__fields {
@@ -528,13 +530,14 @@ h2 {
 }
 
 .receiver {
-   padding-top: 20px;
    position: relative;
    display: flex;
    align-items: flex-start;
+   gap: 10px;
 }
 
 .receiver__check {
+   position: absolute;
    top: 0;
    left: 0;
    width: 0;
@@ -547,8 +550,11 @@ h2 {
    /* background-color: rgb(255, 188, 87); */
 }
 
-.receiver label {
+.receiver__check:focus+label::before {
+   outline: 2px solid black;
+}
 
+.receiver label {
    display: inline-block;
    cursor: pointer;
    margin-left: 30px;
@@ -559,13 +565,13 @@ h2 {
 }
 
 .receiver label::before {
-   /* transition: all 0.1s; */
    content: '';
    position: absolute;
    width: 20px;
    height: 20px;
-   top: 25px;
+   top: 50%;
    left: 0;
+   transform: translate(0, -50%);
    border-radius: 2px;
    border: 1px solid rgb(209, 213, 213);
 }
@@ -653,7 +659,11 @@ fieldset.form-area {
 }
 
 .ship__card input:focus-visible + label {
-   box-shadow: 0px 0px 17px 0px rgba(255, 188, 87, 0.5);
+   /* box-shadow: 0px 0px 17px 0px rgba(255, 188, 87, 0.5); */
+}
+
+.ship__card  input:focus + label {
+box-shadow: 0px 0px 17px 3px rgba(255, 188, 87, 0.8);
 }
 
 .ship__card label::before{
@@ -788,6 +798,10 @@ fieldset.form-area {
 .payment__input:checked + span::before {
    background: url("../img/main/icons/checked.svg") center / 24px no-repeat;
    border: none;
+}
+
+.payment__input:focus + span::before{
+   border: 2px solid rgb(255, 188, 87);
 }
 /* ------------------------------------------------------------------------- */
 .order-area__comment {
@@ -1024,10 +1038,10 @@ fieldset.form-area {
    background-color: rgb(255, 255, 255);
    display: flex;
    flex-direction: column;
+   gap: 30px;
    border-radius: 0 0 8px 8px;
 }
 .total-container__result {
-   margin-bottom: 30px;
 }
 
 .total-container__result li{
@@ -1045,11 +1059,11 @@ fieldset.form-area {
    font-size: 16px;
    line-height: 187.5%; /* 30px/16 */
 }
+
 .total-container__result span:last-child{
    flex-shrink: 0;
 }
 .total-container__title {
-   margin-bottom: 30px;
 }
 
 .dots{
@@ -1062,7 +1076,6 @@ fieldset.form-area {
    font-size: 20px;
    line-height: 120%; /* 24px/20 */
    position: relative;
-   margin-bottom: 30px;
 }
 
 #shop-call-feedback{
@@ -1076,6 +1089,9 @@ fieldset.form-area {
 
 #shop-call-feedback:checked + label::before{
    background: url("../img/main/icons/active.svg") center no-repeat;
+}
+#shop-call-feedback:focus + label::before{
+   border: 2px solid rgb(255, 188, 87);
 }
 .total-container__shop-feedback label{
    display: flex;
@@ -1093,8 +1109,7 @@ fieldset.form-area {
    border-radius: 1px;
    margin: 2px;
 }
-.total-container__submit-order {
-   margin-bottom: 20px;
+.total-container__submit-order { 
 }
 .total-container__submit-order>button {
    background-color: rgb(255, 188, 87);
