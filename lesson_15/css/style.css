@@ -340,13 +340,13 @@ html {
 
 /* -----------------------header menu bottom--------------------- */
 
-.header__bottom {
+.header-bottom {
    background-color: rgb(255, 255, 255);
 }
 
-.header__container {}
+.header-bottom__container {}
 
-.bottom__header {
+.bottom {
    display: flex;
    gap: 30px;
    justify-content: space-between;
