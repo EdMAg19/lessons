@@ -340,11 +340,11 @@ html {
 
 /* -----------------------header menu bottom--------------------- */
 
-.header-bottom {
+.bottom-header {
    background-color: rgb(255, 255, 255);
 }
 
-.header-bottom__container {}
+.bottom-header__container {}
 
 .bottom {
    display: flex;
