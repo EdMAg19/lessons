@@ -383,7 +383,7 @@ html {
    display: none;
 }
 
-@media (max-width: 920px) {
+@media (max-width: 920.98px) {
    .header__list-right-top.list span {
       display: none;
    }
@@ -393,7 +393,7 @@ html {
       display: none;
    }
 
-   .bottom__header {
+   .bottom-header__container {
       flex-direction: column-reverse;
       gap: 15px;
    }
