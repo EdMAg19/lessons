@@ -549,7 +549,7 @@ html {
    }
 }
 
-.heaader__center-adaptive {
+.heaader__center.adaptive {
    display: none;
 }
 
@@ -572,7 +572,7 @@ html {
 }
 
 @media (max-width: 724px) {
-   .heaader__center-adaptive {
+   .heaader__center.adaptive {
       display: block;
       background-color: rgb(255, 255, 255);
    }
@@ -667,8 +667,8 @@ html {
 .title {
    color: #2b2929;
    font-size: 40px;
-   line-height: 120%;
-   /* 48px/40 */
+   line-height: 120%;/* 48px/40 */
+   font-weight: 700;
 }
 
 .title+a {
@@ -708,7 +708,8 @@ html {
 
 .goods__cards {
    display: grid;
-   grid-template: repeat(auto-fill, minmax(470px, 1fr)) / repeat(4, 300px);
+   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+   grid-auto-rows: minmax(470px, auto);
    /* grid-template: repeat(2, 470px) / repeat(auto-fill, minmax(300px, 1fr)); */
    gap: 30px;
    justify-content: center;
@@ -740,7 +741,7 @@ html {
 
 @media (max-width: 659.98px) {
    .goods__cards {
-      grid-template-columns: minmax(300px, 400px);
+      grid-template-columns: 1fr;
       grid-auto-flow: row;
    }
 }
@@ -778,12 +779,15 @@ html {
 .description-text p:last-of-type {
    color: #2b2929;
    padding-bottom: 10px;
+   display: flex;
+   align-items: center;
+   line-height: 1;
 }
 
 .description-text p:last-of-type::before {
    content: '';
-   width: 12px;
-   height: 12px;
+   width: 24px;
+   height: 24px;
    margin-right: 5px;
    vertical-align: middle;
    background: url('../img/main/icons/green-mark.svg') center / cover no-repeat;
@@ -793,7 +797,7 @@ html {
 .description-text h3 {
    flex-grow: 1;
    font-size: 19px;
-   font-weight: 600;
+   font-weight: 700;
    line-height: 126.315789%;
    /* 24px/19 */
 }
@@ -813,6 +817,7 @@ html {
    font-size: 20px;
    line-height: 140%;
    /* 28px/20 */
+   font-weight: 700;
 }
 
 .activity-block__price--red {
@@ -991,7 +996,7 @@ html {
 @media (max-width: 690px) {
 
    .style-body__items {
-      grid-template: auto / minmax(310px, 407px);
+      grid-template: auto / 1fr;
    }
    
    .style-body__item:nth-child(4n + 2),
