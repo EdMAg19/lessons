@@ -260,7 +260,7 @@ html {
 
 }
 
-.header__call img:hover {
+.header__call a>img:hover {
    animation: phone-ring 1.5s linear infinite;
 }
 
