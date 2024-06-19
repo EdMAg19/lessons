@@ -44,8 +44,8 @@ html {
 
 /*---patterns---*/
 %container {
-   max-width: 81.375rem;
-   padding: 0 0.9375rem;
+   max-width: toRem(1302);
+   padding: toRem(15);
    margin: 0 auto;
 }
 
@@ -54,7 +54,7 @@ html {
    flex-wrap: wrap;
    justify-content: stretch;
    align-items: center;
-   gap: 1.25rem;
+   gap: toRem(20);
 }
 
 /*---mixins----*/
@@ -71,12 +71,12 @@ html {
    // height: 10rem;
    height: toRem(165);
 
-   @media (max-width: 40rem) {
-      height: 8rem;
+   @media (max-width: toEm(640)) {
+      height: toRem(128);
    }
 
    &__body {
-      position: relative;
+      // position: relative;
       background-color: #0000009b;
       position: fixed;
       top: 0;
@@ -90,32 +90,32 @@ html {
       @extend %container;
       @extend %displayFlex;
       justify-content: space-between;
-      column-gap: 6.375rem;
-      row-gap: 1.9rem;
-      padding: 3.75rem 0.9375rem;
+      column-gap: toRem(102);
+      row-gap: toRem(30);
+      padding: toRem(60) toRem(15);
 
-      @media (max-width: 80.9375rem) {
-         column-gap: 3.75rem;
+      @media (max-width: toEm(1295)) {
+         column-gap: toRem(60);
       }
 
-      @media (max-width: 52.50rem) {
-         padding: 2rem 0.9375rem;
+      @media (max-width: toEm(840)) {
+         padding: toRem(32) toRem(15);
          justify-content: center;
       }
 
-      @media (max-width: 40rem) {
+      @media (max-width: toEm(640)) {
          justify-content: space-between;
-         column-gap: 1rem;
-         padding: 3.125rem 0.7rem 2.5rem;
+         column-gap: toRem(16);
+         padding: toRem(50) toRem(11) toRem(40);
       }
    }
 
 
    &__logo {
-      @include textDecoration(#fff, 1.875rem, "Exo 2", 400, 1);
+      @include textDecoration(#fff, toRem(30), "Exo 2", 400, toRem(16));
 
-      @media (max-width: 80.9375rem) {
-         font-size: 1.2rem;
+      @media (max-width: toEm(1195)) {
+         font-size: toRem(20);
       }
    }
 
@@ -128,12 +128,12 @@ html {
 }
 
 .logo {
-   @media (max-width: 52.50rem) {
-      font-size: 1.875rem;
+   @media (max-width: toEm(840)) {
+      font-size: toRem(30);
    }
 
-   @media (max-width: 38.50rem) {
-      font-size: 1rem;
+   @media (max-width: toRem(616)) {
+      font-size: toRem(16);
    }
 }
 
@@ -142,35 +142,39 @@ html {
 
    &__items {
       @extend %displayFlex;
-      gap: 3.125rem;
+      gap: toRem(50);
 
-      @media (max-width: 75.9375rem) {
-         gap: 1.56rem;
+      @media (max-width: toRem(1183)) {
+         gap: toRem(25);
       }
 
-      @media (max-width: 40rem) {
+      @media (max-width: toRem(640)) {
          flex-direction: column;
          align-items: end;
-         gap: 0.7rem;
+         gap: toRem(11);
          top: 0;
       }
    }
 
    &__item {
       transition: 0.3s;
-      @include textDecoration(#fff, 1rem, "Orbitron", 500, 1.25);
+      @include textDecoration(#fff, toRem(16), "Orbitron", 500, toRem(20));
       text-transform: uppercase;
-      padding: 0.625rem;
 
-      @media (max-width: 80.9375rem) {
-         font-size: 0.9rem;
+      @media (max-width: toEm(1295)) {
+         font-size: toRem(15);
       }
 
-      @media (any-hover: hover) {
-         &:hover {
-            background-color: #6f00a9;
+      a {
+         padding: toRem(10);
+         transition: all 0.3s;
+         @media (any-hover: hover) {
+            &:hover {
+               background-color: #6f00a9;
+            }
          }
       }
+
    }
 }
 
@@ -186,14 +190,14 @@ html {
 
 
    &__item {
-      max-width: 1.25rem;
+      max-width: toRem(20);
    }
 
-   @media (max-width: 61.686rem) {
+   @media (max-width: toRem(986)) {
       display: none;
    }
 
-   @media (max-width: 40rem) {
+   @media (max-width: toRem(640)) {
       display: block;
    }
 }
@@ -208,6 +212,9 @@ html {
    }
 
    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
       transition: 0.3s;
    }
 }
@@ -217,7 +224,7 @@ html {
    line-height: 0;
    flex-shrink: 0;
 
-   @media (max-width: 40rem) {
+   @media (max-width: toRem(640)) {
       display: block;
    }
 
@@ -261,7 +268,7 @@ html {
       z-index: 2;
       display: block;
       width: 100%;
-      height: 0.125rem;
+      height: toRem(2);
       background-color: #fff;
       transition: all 0.3s;
    }
@@ -291,13 +298,14 @@ html {
    display: none;
    background: #0000009b;
 
-   @media (max-width: 40rem) {
+   @media (max-width: toRem(640)) {
       display: flex;
       width: 100%;
+      height: 100%;
       flex-direction: column;
       align-items: flex-end;
-      gap: 0.7rem;
-      padding: 0.7rem;
+      gap: toRem(11);
+      padding: toRem(11);
       position: fixed;
       overflow: auto;
       right: -100%;
@@ -312,21 +320,18 @@ html {
 
    &__container {
       @extend %container;
-      z-index: 10;
+      z-index: 10; 
+      
+      &--hide {}
    }
-
-   // .burger-menu__container--hide
-
-   &__container--hide {}
 }
-
 
 .main {
    display: flex;
    flex-direction: column;
    flex-grow: 1;
    flex-shrink: 1;
-   gap: 1rem;
+   gap: toRem(16);
 }
 
 .top-intro {
@@ -375,11 +380,11 @@ html {
       position: relative;
       flex-wrap: nowrap;
       gap: toRem(58);
-      padding-top: 5.75rem;
+      padding-top: toRem(92);;
       background-color: transparent;
       z-index: 1;
 
-      @media (max-width: 70.31rem) {
+      @media (max-width: toRem(1124.98)) {
          flex-direction: column;
          padding-top: toRem(20);
          gap: toRem(40);
@@ -403,38 +408,38 @@ html {
          flex-shrink: 1;
       }
 
-      @media (max-width: 70.31rem) {
+      @media (max-width: toRem(1124.98)) {
          align-items: center;
       }
    }
 
    // .intro__text
    &__text {
-      @include textDecoration(#fff, clamp(14px, calc(100vw - 640px), 18px), "Exo", 400, 2.2);
-      letter-spacing: -0.0625rem;
+      @include textDecoration(#fff, clamp(14px, calc(100vw - 640px), 18px), "Exo", 400, toRem(40));
+      letter-spacing: toRem(-1);
       width: 100%;
-   }
 
-   &__text--small {
-      @include textDecoration(#fff, clamp(14px, calc(100vw - 640px), 18px), "Exo", 400, 1.1);
-      letter-spacing: -0.0625rem;
-      text-transform: uppercase;
-      position: relative;
-      margin-bottom: 0.625rem;
-      display: block;
-
-      &::after {
-         content: '';
-         height: 0.125rem;
-         width: calc(toEm(100) + 10%);
-         background: linear-gradient(to right, #FF0000 0%, #00FF00 49%, #2400FF 100%);
-         position: absolute;
-         bottom: toRem(-10);
-         left: 0;
-
-         @media (max-width: toRem(375)) {
-            left: 50%;
-            transform: translateX(-50%);
+      &--small {
+         @include textDecoration(#fff, clamp(14px, calc(100vw - 640px), 18px), "Exo", 400, toRem(18));
+         letter-spacing: toRem(-1);
+         text-transform: uppercase;
+         position: relative;
+         margin-bottom: toRem(10);
+         display: block;
+   
+         &::after {
+            content: '';
+            height: toRem(2);
+            width: calc(toEm(100) + 10%);
+            background: linear-gradient(to right, #FF0000 0%, #00FF00 49%, #2400FF 100%);
+            position: absolute;
+            bottom: toRem(-10);
+            left: 0;
+   
+            @media (max-width: toRem(375)) {
+               left: 50%;
+               transform: translateX(-50%);
+            }
          }
       }
    }
@@ -442,17 +447,16 @@ html {
    // .intro__title
 
    &__title {
-      @include textDecoration(#fff, 5rem, "Exo", 700, 1);
+      @include textDecoration(#fff, clamp(toRem(32), 5vw, toRem(80)), "Exo", 700, toRem(64));
       text-transform: uppercase;
-      font-size: clamp(2rem, 5vw, 5rem);
    }
 
    // .intro__contact
 
    &__contact {
-      @include textDecoration(#fff, clamp(14px, calc(100vw - 640px), 20px), "Orbitron", 900, 1);
+      @include textDecoration(#fff, clamp(14px, calc(100vw - 640px), 20px), "Orbitron", 900, toRem(16));
       text-transform: uppercase;
-      padding: 0.9375rem 3.75rem;
+      padding: toRem(15) toRem(60);
       background-color: #6f00a9;
       transition: background-color 0.2s;
 
@@ -471,7 +475,7 @@ html {
       display: flex;
       justify-content: center;
 
-      @media (max-width: 70.31rem) {
+      @media (max-width: toRem(1140.98)) {
          align-items: center;
          flex-basis: auto;
       }
@@ -479,7 +483,6 @@ html {
       .hero-image {
          aspect-ratio: 688 / 508;
          max-width: 100%;
-         max-height: 100%;
          object-fit: contain;
          object-position: bottom;
 
@@ -531,7 +534,7 @@ html {
       flex-direction: row;
       overflow: scroll;
       scrollbar-width: none;
-      padding: 2.5rem 1rem;
+      padding: toRem(40) toRem(16);
 
       &__item {}
    }
@@ -545,10 +548,10 @@ html {
 
    &__container {
       @extend %container;
-      padding: 7.5rem 0;
+      padding: toRem(120) 0;
 
       &:last-child {
-         margin-bottom: 2.5rem;
+         margin-bottom: toRem(40);
       }
 
       @media (max-width: toRem(640)) {
@@ -563,14 +566,14 @@ html {
       align-items: center;
       flex-wrap: nowrap;
       flex-direction: column;
-      gap: 1.25rem;
+      gap: toRem(20);
    }
 
    // .about-me__title
 
    &__title {
       @extend %displayFlex;
-      @include textDecoration(#fff, 3.75rem, "Exo", 700, 1.2);
+      @include textDecoration(#fff, toRem(60), "Exo", 700, toRem(20));
       text-transform: uppercase;
       font-size: clamp(24px, 5vw, 60px);
       flex-direction: column;
@@ -579,8 +582,9 @@ html {
 
       &::after {
          content: '';
-         height: 0.125rem;
+         height: toRem(2);
          width: calc(100% + 100px);
+         max-width: calc(100vw - 20px);
          background: linear-gradient(to right, #FF0000 0%, #00FF00 49%, #2400FF 100%);
       }
    }
@@ -588,21 +592,29 @@ html {
    // .about-me__texp
 
    &__text {
-      @include textDecoration(#fff, 1.125rem, "Exo", 400, 2.2);
+      @include textDecoration(#fff, toRem(18), "Exo", 400, 2.2);
       text-align: center;
-      letter-spacing: -0.0625rem;
+      letter-spacing: toRem(-1);
       text-transform: capitalize;
-      padding: 0 8.75rem;
-      // margin-bottom: 2.5rem;
+      padding: 0 toRem(15);
+      max-width: toRem(992);
+      margin: 0 auto;
 
       @media (max-width: toRem(640)) {
-         padding-inline: toRem(30);
+         // padding-inline: toRem(30);
       }
    }
 
    .mobile-links-resolution {
-      @media (min-width: toRem(640.98)) {
+      display: block;
+      @media (min-width: toRem(986)) {
          display: none;
+      }
+      * {
+         display: block;
+      }
+      ul {
+         @extend %displayFlex;
       }
    }
 
@@ -610,13 +622,15 @@ html {
       @extend %displayFlex;
       align-items: center;
       gap: clamp(20px, calc(100vw - 640px), 60px);
-      padding: 0 3.81rem;
+      padding: 0 toRem(15);
+      max-width: toRem(1150);
+      margin: 0 auto;
    }
 
    // .about-me__item
 
    &__item {
-      @include textDecoration(#fff, clamp(14px, calc(100vw - 640px), 20px), "Orbitron", 500, 1.25);
+      @include textDecoration(#fff, clamp(14px, calc(100vw - 640px), 20px), "Orbitron", 500, toRem(20));
       text-transform: capitalize;
       @extend %displayFlex;
       flex-wrap: nowrap;
@@ -625,8 +639,20 @@ html {
       gap: clamp(20px, calc(100vw - 640px), 60px);
       flex-grow: 1;
       flex-shrink: 0
+
+      // // --------------------
+      // &._dynamic_adapt {
+      //    // display: inline-block;
+      //    display: flex;
+      //    flex-wrap: nowrap;
+      //    flex-direction: row;
+      //    overflow: scroll;
+      //    scrollbar-width: none;
+      //    padding: toRem(40) toRem(16);
+      // }
    }
 }
+
 
 .edits {
 
@@ -639,12 +665,12 @@ html {
    // .edits__title
 
    &__title {
-      @include textDecoration(#fff, clamp(24px, 5vw, 60px), "Exo", 700, 1);
+      @include textDecoration(#fff, clamp(24px, 5vw, 60px), "Exo", 700, toRem(16));
       text-transform: uppercase;
       @extend %displayFlex;
       flex-direction: column;
       align-items: start;
-      margin-bottom: 7.5rem;
+      margin-bottom: toRem(120);
 
       @media (max-width: toRem(640)) {
          margin: 0 auto 20px;
@@ -652,9 +678,10 @@ html {
 
       &::after {
          content: '';
-         height: 0.125rem;
+         height: toRem(2);
          width: calc(toEm(100) + 100px);
-         max-width: 35.6875rem;
+         max-width: calc(100vw - 20px);
+         max-width: toRem(571);
          background: linear-gradient(to right, #FF0000 0%, #00FF00 49%, #2400FF 100%);
       }
    }
@@ -664,7 +691,7 @@ html {
       flex-wrap: nowrap;
       justify-content: stretch;
       align-items: center;
-      column-gap: 2.5rem;
+      column-gap: toRem(40);
       overflow-x: scroll;
       overflow-y: hidden;
       scrollbar-width: none;
@@ -681,7 +708,11 @@ html {
       flex-direction: column;
       justify-content: stretch;
       align-items: start;
-      gap: 2.5rem;
+      gap: toRem(40);
+
+      @media (max-width: toRem(550)) {         
+         row-gap: toRem(10);
+      }
    }
 
    &__item {
@@ -699,8 +730,8 @@ html {
          left: 0;
          width: 100%;
          max-height: 100%;
-         max-width: 22.5rem;
-         height: 22.5rem;
+         max-width: toRem(360);
+         height: toRem(360);
          background: #00000070;
       }
 
@@ -710,14 +741,14 @@ html {
       @extend %displayFlex;
       flex-direction: column;
       justify-content: center;
-      gap: 0.625rem;
+      gap: toRem(10);
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      max-width: 22.5rem;
-      height: 22.5rem;
+      max-width: toRem(360);
+      height: toRem(360);
       transition: all 0.3s;
 
       @media (any-hover: hover) {
@@ -744,13 +775,13 @@ html {
          // display: none;
          top: 65%;
          transition: all 0.3s;
-         @include textDecoration(#fff, 2.5rem, "Exo", 700, 2.5rem);
+         @include textDecoration(#fff, toRem(40), "Exo", 700, toRem(40));
          text-transform: uppercase;
       }
    }
 
    &__description {
-      @include textDecoration(#fff, clamp(14px, 5vw, 40px), "Exo", 700, 2.5rem);
+      @include textDecoration(#fff, clamp(toRem(14), 5vw, toRem(40)), "Exo", 700, toRem(40));
       text-transform: uppercase;
    }
 }
@@ -761,8 +792,8 @@ html {
       @extend %displayFlex;
       justify-content: center;
       width: 100%;
-      min-height: 9.375rem;
-      @include textDecoration(#fff, clamp(2rem, 5vw, 5rem), "Exo", 700, 2.5rem);
+      min-height: toRem(150);
+      @include textDecoration(#fff, clamp(toRem(32), 5vw, toRem(80)), "Exo", 700, toRem(40));
       text-transform: uppercase;
    }
 }
